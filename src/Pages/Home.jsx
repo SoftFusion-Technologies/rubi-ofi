@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from '../Components/Hero';
 // import FeaturedProducts from './FeaturedProducts';
-// import InfoSection from '../Components/InfoSection';
+ import InfoSection from '../Components/InfoSection';
 // import ContactForm from '../Components/ContactForm';
 const Home = () => {
   return (
@@ -10,7 +10,7 @@ const Home = () => {
       <div className="mt-20">
         {/* <FeaturedProducts /> */}
       </div>
-      {/* <InfoSection /> */}
+       <InfoSection /> 
       {/* <ContactForm /> */}
     </div>
   );
