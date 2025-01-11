@@ -1,46 +1,60 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { menuItems } from '../Config/menu';
 import LogoRubi from '../Images/LogoPerfumeria.png';
 import { Link } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa'; // Importa el ícono del carrito
 import { CartContext } from '../Components/CartContext'; // Importa el contexto del carrito
 import '../Styles/animacionlinks.css';
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-  // Función para hacer el scroll hacia la sección de contacto
-  const scrollToContactSection = () => {
-    const section = document.getElementById('contacto');
-    section.scrollIntoView({ behavior: 'smooth' });
-  };
-
   const { cartItems } = useContext(CartContext); // Obtener los productos del carrito
-
   const totalQuantity = cartItems.reduce(
     (total, item) => total + item.quantity,
     0
   );
 
+  // Cambiar el estado de isScrolled cuando el usuario haga scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className="bg-white shadow-md relative z-10">
+    <nav
+      className={`fixed top-0 left-0 w-full z-10 transition-all duration-300 ease-in-out ${
+        isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
+      }`}
+    >
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo y Nombre */}
         <div className="flex items-center space-x-3">
           <Link to="/">
-            {' '}
-            {/* Redirige al inicio cuando se hace clic */}
-            <img
-              src={LogoRubi}
-              alt="Rubi Perfumeria Logo"
-              className="h-auto w-24"
-            />
+            {/* Mostrar texto si no se ha hecho scroll, o el logo si se hizo scroll */}
+            {isScrolled ? (
+              <img
+                src={LogoRubi}
+                alt="Rubi Perfumeria Logo"
+                className="h-auto w-24"
+              />
+            ) : (
+              <span className="text-white text-2xl font-bold uppercase">
+                RUBI PERFUMERIA
+              </span>
+            )}
           </Link>
-          {/* <Link to="/" className="link">
-            <span className="font-bignoodle text-2xl font-bold text-black tracking-wide uppercase">
-              Rubi
-            </span>
-          </Link> */}
         </div>
 
         {/* Menú Desktop */}
@@ -49,14 +63,15 @@ const Navbar = () => {
             <Link
               key={item.id}
               to={item.href}
-              className="link font-bignoodle text-lg font-medium text-black hover:text-gray-500 transition"
+              className={`link font-bignoodle text-lg font-medium transition ${
+                isScrolled ? 'text-black' : 'text-white'
+              }`}
             >
               {item.label}
             </Link>
           ))}
         </div>
 
-        {/* Carrito de compras en Desktop */}
         {/* Carrito de compras en Desktop */}
         <div className="relative">
           <Link to="/cart" className="flex items-center">
