@@ -2,6 +2,11 @@ import React from 'react';
 import ImgHero1 from '../Images/Hero/hero1.jpeg';
 
 const Hero = () => {
+  // Función para hacer el scroll hacia la sección
+  const scrollToSection = () => {
+    const section = document.getElementById('featured-products');
+    section.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <section
       className="relative h-screen bg-cover bg-center"
@@ -17,7 +22,10 @@ const Hero = () => {
           Encuentra fragancias exclusivas que inspiran elegancia y
           sofisticación.
         </p>
-        <button className="uppercase bg-white text-black font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out hover:bg-black hover:text-white">
+        <button
+          onClick={scrollToSection}
+          className="uppercase bg-white text-black font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out hover:bg-black hover:text-white"
+        >
           Explorar Colecciones
         </button>
       </div>

@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar';
 import CartProvider from './Components/CartContext'; // Importamos el proveedor del carrito
 import Home from './Pages/Home';
 import Footer from './Components/Footer';
+import Mapa from './Components/Mapa';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
+        <Mapa />
         <Footer />
       </Router>
     </CartProvider>
