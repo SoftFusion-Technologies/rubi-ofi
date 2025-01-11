@@ -51,7 +51,7 @@ const Navbar = () => {
               />
             ) : (
               <span className="text-white text-2xl font-bold uppercase">
-                RUBI PERFUMERIA
+                RUBI PERFUMERÍA
               </span>
             )}
           </Link>
