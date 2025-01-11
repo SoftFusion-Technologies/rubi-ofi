@@ -8,6 +8,11 @@ const FeaturedProducts = () => {
 
   return (
     <section id="featured-products" className="py-16 px-4 sm:px-8">
+      {/* Título de la sección */}
+      <h2 className="font-messina text-3xl font-bold text-center mb-8">
+        Destacados
+      </h2>
+
       {/* Grid de productos */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mx-auto max-w-screen-lg">
         {products.map((product) => (
