@@ -9,7 +9,7 @@ const Home = () => {
       <Hero />
       <InfoSection />
 
-      <div className="mt-20">
+      <div className="-mt-36">
         {' '}
         <FeaturedProducts />{' '}
       </div>

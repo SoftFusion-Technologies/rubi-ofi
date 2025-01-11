@@ -1,57 +1,97 @@
-/* General styling for the section */
-.info-section {
-  display: flex;
-  justify-content: center;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
+/* InfoSection.css */
 
-/* Container for the items to make them align in a row */
+/* Contenedor principal */
 .info-section-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  gap: 16px;
   flex-wrap: wrap;
-  gap: 2rem;
-  width: 100%;
 }
 
-/* Individual item styling */
+/* Elementos de info por defecto (pantallas grandes) */
 .info-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  flex: 1;
-  min-width: 200px; /* Prevents items from getting too narrow */
+  flex: 1 1 calc(33.333% - 16px);
+  opacity: 1;
+  transform: none;
+  transition: none;
+  position: relative;
 }
 
-/* Icon styling */
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .info-section-container {
+    overflow: hidden;
+    height: 200px; /* Ajusta según el contenido */
+    justify-content: center;
+  }
+
+  .info-item {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+  }
+
+  .info-item.active {
+    opacity: 1;
+    transform: translateX(-50%);
+  }
+
+  .info-item.inactive {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+}
+
+/* Estilo para iconos y contenido */
 .icon-container {
-  display: inline-block;
-  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  /* background: #f0f0f0; */
+  border-radius: 50%;
+  margin: 0 auto 10px;
 }
 
 .icon {
-  font-size: 3rem;
+  font-size: 40px;
+  color: #a34ae2;
 }
 
-/* Title and description styling */
 .info-title {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .info-description {
+  font-size: 16px;
   color: #666;
-  font-size: 1rem;
+  margin: 0 auto;
+  max-width: 280px;
 }
 
-/* Responsiveness for mobile */
 @media (max-width: 768px) {
-  .info-section-container {
-    flex-direction: column;
-    align-items: center;
+  .icon-container {
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon {
+    font-size: 32px;
+  }
+
+  .info-title {
+    font-size: 18px;
+  }
+
+  .info-description {
+    font-size: 14px;
   }
 }
