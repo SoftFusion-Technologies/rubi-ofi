@@ -1,119 +1,110 @@
 export const products = [
   {
-    id: 1, // Agregar un id único
-    imageFront: '/ProductsDestacados/ImgCraneFrente.webp',
-    imageBack: '/ProductsDestacados/ImgCraneBack.webp',
-    imagePack: '/Packs/imgCranePack.webp',
-    title: 'REMERA OVERSIZE CRANE',
-    price: '$14.500,00',
-    priceDetails: 'Precio con efectivo o transferencia: $13.000,00',
+    id: 1,
+    imageFront: '/PerfumesDestacados/DiorSavageFront.webp',
+    imageBack: '/PerfumesDestacados/DiorSavage2.webp',
+    imagePack: '/Packs/DiorSauvagePack.webp',
+    title: 'DIOR SAUVAGE',
+    // price: '$14.500,00',
+    // priceDetails: 'Precio con efectivo o transferencia: $13.000,00',
     description: `
-      La Remera OVERSIZE CRANE, la prenda ideal para quienes buscan comodidad y estilo. 
-      Esta remera oversize de manga corta está fabricada con:
-      
-      - Material de tela: Jersey peinado 24.1, una tela suave y agradable al tacto que te mantendrá cómodo durante todo el día.
-      - Cuidado sencillo: Lavar con agua fría para preservar la calidad y durabilidad de la prenda.
-      
-      Las medidas están disponibles en la última foto para ayudarte a elegir la talla perfecta.
+      El perfume "Dior Sauvage" es una fragancia masculina intensa y fresca, perfecta para cualquier ocasión.
 
-      Nota: Las fotos han sido tomadas a luz natural con cámaras no profesionales, por lo que el color puede variar levemente.
-    `,
-    color: null // Guardamos el color elegido
+      - Notas de salida: Bergamota de Calabria y pimienta.
+      - Notas de corazón: Lavanda y pimienta de Sichuan.
+      - Notas de fondo: Ambroxan y cedro.
+
+      Disponible en presentación de 100 ml, diseñado para el hombre moderno que busca marcar presencia.`,
+    color: null
   },
   {
-    id: 2, // Agregar un id único
-    imageFront: '/ProductsDestacados/Remeras OVer Brooklyn 2.webp',
-    imageBack: '/ProductsDestacados/Remeras OVer Brooklyn.webp',
-    imagePack: '/Packs/Remeras OVer Brooklyn 1.webp',
-    title: 'REMERA OVERSIZE BROOKLYN',
-    price: '$14.500,00',
-    priceDetails: 'Precio con efectivo o transferencia: $13.000,00',
+    id: 2,
+    imageFront: '/PerfumesDestacados/Chanel5Front.webp',
+    imageBack: '/PerfumesDestacados/Chanel5B2.webp',
+    imagePack: '/Packs/ChanelNo5Pack.webp',
+    title: 'CHANEL N°5',
+    // price: '$14.500,00',
+    // priceDetails: 'Precio con efectivo o transferencia: $13.000,00',
     description: `
-      La Remera "Brooklyn", la prenda ideal para quienes buscan comodidad y estilo. Esta remera oversize de manga corta.
+      La icónica fragancia "Chanel N°5" redefine la feminidad con un aroma clásico y sofisticado.
 
-      Material de tela: Fabricada en jersey peinado 24.1, una tela suave y agradable al tacto que te mantendrá cómodo durante todo el día.
-      Cuidado sencillo: Se recomienda lavar con agua fría para preservar la calidad y durabilidad de la prenda.
-      Las medidas están disponibles en la última foto para ayudarte a elegir la talla perfecta.
+      - Notas de salida: Neroli y ylang-ylang.
+      - Notas de corazón: Jazmín y rosa.
+      - Notas de fondo: Sándalo y vainilla.
 
-      Nota: Las fotos han sido tomadas a luz natural con cámaras no profesionales, por lo que el color puede variar levemente.`,
-    color: null // Guardamos el color elegido
+      Una fragancia atemporal en presentación de 100 ml, ideal para la mujer elegante.`,
+    color: null
   },
   {
-    id: 3, // Agregar un id único
-    imageFront: '/ProductsDestacados/Remera over lisa 1.webp',
-    imageBack: '/ProductsDestacados/Remera over lisa 2.webp',
-    imagePack: '/Packs/remeraLisaTalle.webp',
-    title: 'REMERA OVERSIZE LISA',
-    price: '$13.000,00,000',
-    priceDetails: 'Llevando 3 o más C/U: $10.000,000',
+    id: 3,
+    imageFront: '/PerfumesDestacados/ArmaniCodeFront.webp',
+    imageBack: '/PerfumesDestacados/ArmaniCodeBack2.webp',
+    imagePack: '/Packs/ArmaniCodePack.webp',
+    title: 'ARMANI CODE',
+    // price: '$14.500,00',
+    // priceDetails: 'Precio con efectivo o transferencia: $13.000,00',
     description: `
-     REMERA OVERSIZE LISA
-Descubre la Remera lisa. Esta remera oversize de manga corta.
+      "Armani Code" es una fragancia sensual y magnética para el hombre sofisticado.
 
-Material de tela: Fabricada en jersey peinado 24.1, una tela suave y agradable al tacto que te mantendrá cómodo durante todo el día.
-Cuidado sencillo: Se recomienda lavar con agua fría para preservar la calidad y durabilidad de la prenda.
-Las medidas están disponibles en la última foto para ayudarte a elegir la talla perfecta.
+      - Notas de salida: Limón y bergamota.
+      - Notas de corazón: Flor de olivo y anís estrellado.
+      - Notas de fondo: Cuero y haba tonka.
 
-Nota: Las fotos han sido tomadas a luz natural con cámaras no profesionales, por lo que el color puede variar levemente.`,
-    color: null // Guardamos el color elegido
+      Presentación de 100 ml, ideal para la noche y ocasiones especiales.`,
+    color: null
   },
   {
-    id: 4, // Agregar un id único
-    imageFront: '/ProductsDestacados/Remeras OVer Positive.webp',
-    imageBack: '/ProductsDestacados/Remeras OVer Positive Back.webp',
-    imagePack: '/Packs/imgPositive.webp',
-    title: 'REMERA OVERSIZE POSITIVE',
-    price: '$14.500,00',
-    priceDetails: 'Precio con efectivo o transferencia: $13.000,00',
+    id: 4,
+    imageFront: '/PerfumesDestacados/LancomeLaVieFront.webp',
+    imageBack: '/PerfumesDestacados/LancomeLaVieBack.webp',
+    imagePack: '/Packs/LancomeLaViePack.webp',
+    title: 'LANCOME LA VIE EST BELLE',
+    // price: '$14.500,00',
+    // priceDetails: 'Precio con efectivo o transferencia: $13.000,00',
     description: `
-    REMERA OVERSIZE POSITIVE
-La Remera "Positive", la prenda ideal para quienes buscan comodidad y estilo. Esta remera oversize de manga corta.
+      Descubre "La Vie Est Belle" de Lancôme, una oda a la alegría de vivir para la mujer optimista.
 
-Material de tela: Fabricada en jersey peinado 24.1, una tela suave y agradable al tacto que te mantendrá cómodo durante todo el día.
-Cuidado sencillo: Se recomienda lavar con agua fría para preservar la calidad y durabilidad de la prenda.
-Las medidas están disponibles en la última foto para ayudarte a elegir la talla perfecta.
+      - Notas de salida: Pera y grosella negra.
+      - Notas de corazón: Iris y jazmín.
+      - Notas de fondo: Praliné y vainilla.
 
-Nota: Las fotos han sido tomadas a luz natural con cámaras no profesionales, por lo que el color puede variar levemente.`,
-    color: null // Guardamos el color elegido
+      Fragancia femenina en presentación de 100 ml, ideal para destacar la felicidad natural.`,
+    color: null
   },
   {
-    id: 5, // Agregar un id único
-    imageFront: '/ProductsDestacados/Remeras OVer Crazon back.webp',
-    imageBack: '/ProductsDestacados/imgCorazonFront.webp',
-    imagePack: '/Packs/Remeras OVer Crazon 2 (1).webp',
-    title: 'REMERA OVERSIZE CORAZÓN',
-    price: '$14.500,00',
-    priceDetails: 'Precio con efectivo o transferencia: $13.000,00',
+    id: 5,
+    imageFront: '/PerfumesDestacados/VersaceErosFront.webp',
+    imageBack: '/PerfumesDestacados/VersaceErosBack.webp',
+    imagePack: '/Packs/VersaceErosPack.webp',
+    title: 'VERSACE EROS',
+    // price: '$14.500,00',
+    // priceDetails: 'Precio con efectivo o transferencia: $13.000,00',
     description: `
-    REMERA OVERSIZE CORAZÓN
-La Remera "Corazón", la prenda ideal para quienes buscan comodidad y estilo. Esta remera oversize de manga corta.
+      "Versace Eros" combina la intensidad y la pasión en una fragancia masculina inolvidable.
 
-Material de tela: Fabricada en jersey peinado 24.1, una tela suave y agradable al tacto que te mantendrá cómodo durante todo el día.
-Cuidado sencillo: Se recomienda lavar con agua fría para preservar la calidad y durabilidad de la prenda.
-Las medidas están disponibles en la última foto para ayudarte a elegir la talla perfecta.
+      - Notas de salida: Limón y manzana verde.
+      - Notas de corazón: Geranio y ambroxan.
+      - Notas de fondo: Vainilla y cedro.
 
-Nota: Las fotos han sido tomadas a luz natural con cámaras no profesionales, por lo que el color puede variar levemente.`,
-    color: null // Guardamos el color elegido
+      Un aroma duradero en presentación de 100 ml, ideal para hombres confiados.`,
+    color: null
   },
   {
-    id: 6, // Agregar un id único
-    imageFront: '/ProductsDestacados/Remeras Fellow Blanca Frente.webp',
-    imageBack: '/ProductsDestacados/Remeras Fellow Blanca.webp',
-    imagePack: '/Packs/fellow.webp',
-    title: 'REMERA OVERSIZE FELLOW',
-    price: '$14.500,00',
-    priceDetails: 'Precio con efectivo o transferencia: $13.000,00',
+    id: 6,
+    imageFront: '/PerfumesDestacados/YSLLibreFront.webp',
+    imageBack: '/PerfumesDestacados/YSLLibreBack.webp',
+    imagePack: '/Packs/YSLLibrePack.webp',
+    title: 'YSL LIBRE',
+    // price: '$14.500,00',
+    // priceDetails: 'Precio con efectivo o transferencia: $13.000,00',
     description: `
-   REMERA CLASICA FELLOW
-La Remera "Fellow". Esta remera corte clásico de manga corta.
+      La fragancia "Libre" de Yves Saint Laurent es la máxima expresión de libertad para la mujer moderna.
 
-Material de tela: Fabricada en jersey peinado 24.1, una tela suave y agradable al tacto que te mantendrá cómodo durante todo el día.
-Cuidado sencillo: Se recomienda lavar con agua fría para preservar la calidad y durabilidad de la prenda.
-Las medidas están disponibles en la última fotos.
+      - Notas de salida: Lavanda y mandarina.
+      - Notas de corazón: Flor de azahar y jazmín.
+      - Notas de fondo: Vainilla de Madagascar y almizcle.
 
-Se recomienda pedir un talle mas grande. (Si normalmente usas talle 3, pedi un talle 4)
-
-Nota: Las fotos han sido tomadas a luz natural con cámaras no profesionales, por lo que el color puede variar levemente.`,
-    color: null // Guardamos el color elegido
+      Un aroma audaz y femenino en presentación de 100 ml.`,
+    color: null
   }
 ];
