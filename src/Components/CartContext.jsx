@@ -17,7 +17,6 @@ export const CartProvider = ({ children }) => {
     // Validación básica
     if (
       !productToAdd.id ||
-      !productToAdd.selectedColor ||
       !productToAdd.selectedSize ||
       !productToAdd.quantity
     ) {
@@ -29,7 +28,6 @@ export const CartProvider = ({ children }) => {
     const existingProduct = cartItems.find(
       (item) =>
         item.id === productToAdd.id &&
-        item.selectedColor === productToAdd.selectedColor &&
         item.selectedSize === productToAdd.selectedSize
     );
 
@@ -38,7 +36,6 @@ export const CartProvider = ({ children }) => {
       setCartItems((prevItems) =>
         prevItems.map((item) =>
           item.id === existingProduct.id &&
-          item.selectedColor === existingProduct.selectedColor &&
           item.selectedSize === existingProduct.selectedSize
             ? { ...item, quantity: item.quantity + productToAdd.quantity }
             : item
@@ -56,13 +53,12 @@ export const CartProvider = ({ children }) => {
   };
 
   // Función para eliminar o disminuir la cantidad de un producto
-  const removeFromCart = (productId, selectedColor, selectedSize) => {
+  const removeFromCart = (productId, selectedSize) => {
     setCartItems(
       (prevItems) =>
         prevItems
           .map((item) =>
             item.id === productId &&
-            item.selectedColor === selectedColor &&
             item.selectedSize === selectedSize
               ? { ...item, quantity: item.quantity > 1 ? item.quantity - 1 : 0 }
               : item
