@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { CartContext } from '../Components/CartContext'; // Importa el contexto del carrito
 
-const AddToCartButton = ({ product, selectedColor, selectedSize }) => {
+const AddToCartButton = ({ product, selectedSize }) => {
   const { addToCart } = useContext(CartContext); // Función para agregar al carrito
   const [quantity, setQuantity] = useState(1); // Estado para la cantidad
   const [showModal, setShowModal] = useState(false); // Estado para mostrar el modal

@@ -17,10 +17,8 @@ const ProductDetail = () => {
 
   const { id } = useParams(); // Obtener el id del producto desde la URL
   const [product, setProduct] = useState(null);
-  const [selectedColor, setSelectedColor] = useState(null); // Nuevo estado para el color seleccionado
   const [selectedSize, setSelectedSize] = useState(null); // Nuevo estado para el color seleccionado
   const [sizeError, setSizeError] = useState(false);
-  const [colorError, setColorError] = useState(false);
 
   const [currentImage, setCurrentImage] = useState(null);
   useEffect(() => {
@@ -50,10 +48,6 @@ const ProductDetail = () => {
     setSizeError(false); // Reset error when a size is selected
   };
 
-  const handleColorSelect = (color) => {
-    setSelectedColor(color);
-    setColorError(false); // Reset error when a color is selected
-  };
 
   if (!product) {
     return (
@@ -151,7 +145,6 @@ const ProductDetail = () => {
             <div className="mt-2">
               <AddToCartButton
                 product={product}
-                selectedColor={selectedColor}
                 selectedSize={selectedSize}
               />
             </div>
