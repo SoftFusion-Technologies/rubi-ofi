@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ImgHero1 from '../Images/Hero/hero1.jpeg';
 
 const Hero = () => {
+  // Desplazar hacia la parte superior cuando el componente se monte
+  useEffect(() => {
+    window.scrollTo({
+      top: 0, // Desplazar hacia arriba de la página
+      behavior: 'smooth' // Añadir desplazamiento suave
+    });
+  }, []);
   // Función para hacer el scroll hacia la sección
   const scrollToSection = () => {
     const section = document.getElementById('featured-products');
