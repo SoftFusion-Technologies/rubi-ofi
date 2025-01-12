@@ -127,7 +127,7 @@ const ProductDetail = () => {
                 </li>
                 <li>·</li>
                 <li className="hover:text-pink-500 cursor-pointer">
-                  PRODUCTOS
+                  FRAGANCIAS
                 </li>
                 <li>·</li>
                 <li className="text-gray-800 font-bold">
