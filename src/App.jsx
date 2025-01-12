@@ -7,6 +7,8 @@ import Footer from './Components/Footer';
 import Mapa from './Components/Mapa';
 import ProductDetail from './Pages/ProductDetail';
 import NotFound from './Pages/NotFound'; // Importar la página 404
+import Cart from './Components/Cart'; // Importamos el proveedor del carrito
+import FloatingCart from './Components/FloatingCart';
 
 function App() {
   return (
@@ -17,10 +19,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/product/:id/:name" element={<ProductDetail />} />{' '}
+          <Route path="/cart" element={<Cart />} />
           {/* Ruta para la página no encontrada */}
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Mapa />
+        <FloatingCart />
         <Footer />
       </Router>
     </CartProvider>
