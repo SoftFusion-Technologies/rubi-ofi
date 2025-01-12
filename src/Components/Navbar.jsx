@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { menuItems } from '../Config/menu';
 import LogoRubi from '../Images/LogoPerfumeria.png';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa'; // Importa el ícono del carrito
 import { CartContext } from '../Components/CartContext'; // Importa el contexto del carrito
 import '../Styles/animacionlinks.css';
@@ -9,6 +9,7 @@ import '../Styles/animacionlinks.css';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation(); // Obtener la ubicación actual
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -64,7 +65,11 @@ const Navbar = () => {
               key={item.id}
               to={item.href}
               className={`link font-bignoodle text-lg font-medium transition ${
-                isScrolled ? 'text-black' : 'text-white'
+                location.pathname === '/'
+                  ? isScrolled
+                    ? 'text-black'
+                    : 'text-white'
+                  : 'text-black'
               }`}
             >
               {item.label}
