@@ -9,6 +9,7 @@ import ProductDetail from './Pages/ProductDetail';
 import NotFound from './Pages/NotFound'; // Importar la página 404
 import Cart from './Components/Cart'; // Importamos el proveedor del carrito
 import FloatingCart from './Components/FloatingCart';
+import About from './Pages/About';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/product/:id/:name" element={<ProductDetail />} />{' '}
           <Route path="/cart" element={<Cart />} />
+          <Route path="/nosotros" element={<About />} />
           {/* Ruta para la página no encontrada */}
           <Route path="*" element={<NotFound />} />
         </Routes>
