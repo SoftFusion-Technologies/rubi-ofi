@@ -112,5 +112,43 @@ Las medidas están disponibles en la última foto para ayudarte a elegir la tall
 
 Nota: Las fotos han sido tomadas a luz natural con cámaras no profesionales, por lo que el color puede variar levemente.`,
     color: null // Guardamos el color elegido
+  },
+  ,
+  {
+    id: 7,
+    imageFront: '/PerfumesDestacados/YSLBlackOpiumFront.webp',
+    imageBack: '/PerfumesDestacados/YSLBlackOpiumBack.webp',
+    imagePack: '/Packs/YSLBlackOpiumPack.webp',
+    title: 'YSL BLACK OPIUM',
+    // price: '$14.500,00',
+    // priceDetails: 'Precio con efectivo o transferencia: $13.000,00',
+    description: `
+    La fragancia "Black Opium" de Yves Saint Laurent es un homenaje a la mujer audaz, misteriosa y enérgica.
+
+    - Notas de salida: Café, pimienta rosa y flor de azahar.
+    - Notas de corazón: Jazmín, almendra y regaliz.
+    - Notas de fondo: Vainilla, pachulí y cedro.
+
+    Un aroma intenso y envolvente en presentación de 90 ml.`,
+    color: null
+  },
+
+  {
+    id: 8,
+    imageFront: '/PerfumesDestacados/DolceGabbanaTheOneFront.webp',
+    imageBack: '/PerfumesDestacados/DolceGabbanaTheOneBack.webp',
+    imagePack: '/Packs/DolceGabbanaTheOnePack.webp',
+    title: 'DOLCE & GABBANA THE ONE',
+    price: '$18.000,00',
+    priceDetails: 'Precio con efectivo o transferencia: $16.500,00',
+    description: `
+    "Dolce & Gabbana The One" es una fragancia oriental-floral que transmite elegancia y sensualidad.
+
+    - Notas de salida: Durazno, lichi, bergamota.
+    - Notas de corazón: Jazmín, lirio, ciruela.
+    - Notas de fondo: Madera de sándalo, almizcle, vainilla.
+
+    Ideal para una mujer sofisticada que busca un perfume distintivo y lleno de glamour.`,
+    color: null
   }
 ];
