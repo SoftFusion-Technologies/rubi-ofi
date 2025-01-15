@@ -6,6 +6,7 @@ import { sizes } from '../Helpers/helpers';
 import { CartContext } from '../Components/CartContext'; // Importa el contexto del carrito
 import AddToCartButton from '../Config/AddToCartButton';
 import ProductNotFound from '../Components/ProductNotFound';
+import { fraganciasClasicas } from '../Helpers/Fragancias/fraganciasClasicas';
 const ProductDetail = () => {
   // Desplazar hacia la parte superior cuando el componente se monte
   useEffect(() => {
@@ -25,6 +26,7 @@ const ProductDetail = () => {
     // Combina los productos de ambos arrays (eliminando duplicados)
     const allProducts = [
       ...products,
+      ...fraganciasClasicas,
       ...productosURL.filter(
         (productSimple) =>
           !products.some(
@@ -47,7 +49,6 @@ const ProductDetail = () => {
     setSelectedSize(size);
     setSizeError(false); // Reset error when a size is selected
   };
-
 
   if (!product) {
     return (
@@ -143,10 +144,7 @@ const ProductDetail = () => {
             </p>
 
             <div className="mt-2">
-              <AddToCartButton
-                product={product}
-                selectedSize={selectedSize}
-              />
+              <AddToCartButton product={product} selectedSize={selectedSize} />
             </div>
 
             <h2 className="mt-5 text-2xl font-extrabold mb-4 text-gray-800 font-bignoodle">

@@ -33,7 +33,7 @@ const Fragancias = () => {
   );
 
   const filteredProductos = fraganciasClasicas.filter((producto) =>
-    producto.nombre.toLowerCase().includes(searchQuery.toLowerCase())
+    producto.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   return (
@@ -109,21 +109,19 @@ const Fragancias = () => {
       {/* Grid de productos, se adapta a 3 o 4 por fila */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {filteredProductos.map((producto) => (
-          <div
-            key={producto.id}
+          <Link
+            key={producto.id} // Usamos el id como clave única
+            to={`/product/${producto.id}/${encodeURIComponent(producto.title)}`} // Ruta dinámica con id y title del producto
             className="producto-card border border-gray-300 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition"
-            onClick={() =>
-              handleWhatsAppClick(producto.nombre, producto.precio)
-            }
           >
             <img
-              src={producto.imagen}
-              alt={producto.nombre}
+              src={producto.imageFront}
+              alt={producto.title}
               className="w-full h-64 object-cover"
             />
             <div className="p-4 text-center">
               <h3 className="text-xl font-semibold text-black">
-                {producto.nombre}
+                {producto.title}
               </h3>
               <p className="text-lg text-gray-600">{producto.precio}</p>
               <p className="uppercase text-xs mt-2 mb-2">
@@ -133,13 +131,13 @@ const Fragancias = () => {
               <butonn
                 className="cursor-pointer font-bignoodle text-2xl"
                 onClick={() =>
-                  handleWhatsAppClick(producto.nombre, producto.precio)
+                  handleWhatsAppClick(producto.title, producto.precio)
                 }
               >
                 COMPRAR
               </butonn>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 
