@@ -58,6 +58,7 @@ export const fraganciasClasicas = [
     newPrecio: 'Precio con efectivo o transferencia $11.000,00',
     categoria: 'simple',
     imageFront: '/PerfumesClasicos/JadoreDiorFront.webp',
+    imageBack: '/PerfumesClasicos/JadoreDiorBack.webp',
     description: `
       "J'adore" de Dior es una fragancia femenina floral y elegante, perfecta para la mujer que se siente única.
 
@@ -74,6 +75,7 @@ export const fraganciasClasicas = [
     newPrecio: 'Precio con efectivo o transferencia $11.000,00',
     categoria: 'simple',
     imageFront: '/PerfumesClasicos/CocoMademoiselleFront.webp',
+    imageBack: '/PerfumesClasicos/CocoMademoiselleBack.webp',
     description: `
       "Coco Mademoiselle" de Chanel es una fragancia fresca y oriental para la mujer moderna y chic.
 
@@ -90,6 +92,7 @@ export const fraganciasClasicas = [
     newPrecio: 'Precio con efectivo o transferencia $11.000,00',
     categoria: 'simple',
     imageFront: '/PerfumesClasicos/ValentinoPourHommeFront.webp',
+    imageBack: '/PerfumesClasicos/ValentinoPourHommeBack.webp',
     description: `
       "Pour Homme" de Valentino es un perfume masculino con un toque de elegancia y fuerza.
 
@@ -106,6 +109,7 @@ export const fraganciasClasicas = [
     newPrecio: 'Precio con efectivo o transferencia $11.000,00',
     categoria: 'simple',
     imageFront: '/PerfumesClasicos/AquaDiGioFront.webp',
+    imageBack: '/PerfumesClasicos/AquaDiGioBack.webp',
     description: `
       "Aqua di Gio" de Giorgio Armani es un perfume fresco y acuático, ideal para el hombre moderno.
 
@@ -121,7 +125,8 @@ export const fraganciasClasicas = [
     precio: '$18.500,00',
     newPrecio: 'Precio con efectivo o transferencia $16.500,00',
     categoria: 'simple',
-    imageFront: '/PerfumesClasicos/DolceGabbanaLightBlue.webp',
+    imageFront: '/PerfumesClasicos/DolceGabbanaLightBlueFront.webp',
+    imageBack: '/PerfumesClasicos/DolceGabbanaLightBlueBack.webp',
     description: `
     "Dolce & Gabbana Light Blue" es una fragancia fresca, luminosa y afrutada que captura la esencia del verano mediterráneo.
 
