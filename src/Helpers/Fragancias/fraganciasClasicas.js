@@ -1,6 +1,6 @@
 export const fraganciasClasicas = [
   {
-    id: 102,
+    id: 100,
     nombre: 'GUILTY POUR FEMME',
     precio: '$13.000,00',
     newPrecio: 'Precio con efectivo o transferencia $11.000,00',
@@ -16,7 +16,7 @@ export const fraganciasClasicas = [
       Perfume sensual y misterioso, para usar de día o de noche.`
   },
   {
-    id: 103,
+    id: 101,
     nombre: 'TOM FORD BLACK ORCHID',
     precio: '$13.000,00',
     newPrecio: 'Precio con efectivo o transferencia $11.000,00',
@@ -32,7 +32,7 @@ export const fraganciasClasicas = [
       Un clásico moderno que destaca por su intensidad y sofisticación.`
   },
   {
-    id: 104,
+    id: 102,
     nombre: 'LA VIE EST BELLE',
     precio: '$13.000,00',
     newPrecio: 'Precio con efectivo o transferencia $11.000,00',
@@ -48,7 +48,7 @@ export const fraganciasClasicas = [
       Ideal para mujeres felices que desean compartir su optimismo.`
   },
   {
-    id: 105,
+    id: 103,
     nombre: 'JADORE DE DIOR',
     precio: '$13.000,00',
     newPrecio: 'Precio con efectivo o transferencia $11.000,00',
@@ -64,7 +64,7 @@ export const fraganciasClasicas = [
       Fragancia clásica que destaca por su delicadeza y sofisticación.`
   },
   {
-    id: 106,
+    id: 104,
     nombre: 'COCO MADEMOISELLE',
     precio: '$13.000,00',
     newPrecio: 'Precio con efectivo o transferencia $11.000,00',
@@ -80,7 +80,7 @@ export const fraganciasClasicas = [
       Ideal para la mujer que busca un perfume elegante y lleno de energía.`
   },
   {
-    id: 107,
+    id: 105,
     nombre: 'POUR HOMME DE VALENTINO',
     precio: '$13.000,00',
     newPrecio: 'Precio con efectivo o transferencia $11.000,00',
@@ -96,7 +96,7 @@ export const fraganciasClasicas = [
       Perfecto para hombres sofisticados que buscan una fragancia duradera y refinada.`
   },
   {
-    id: 108,
+    id: 106,
     nombre: 'AQUA DI GIO',
     precio: '$13.000,00',
     newPrecio: 'Precio con efectivo o transferencia $11.000,00',
@@ -110,5 +110,21 @@ export const fraganciasClasicas = [
       - Notas de fondo: Almizcle, cedro.
 
       Perfume clásico que resalta la frescura y naturalidad.`
+  },
+  {
+    id: 107,
+    nombre: 'DOLCE & GABBANA LIGHT BLUE',
+    precio: '$18.500,00',
+    newPrecio: 'Precio con efectivo o transferencia $16.500,00',
+    categoria: 'simple',
+    imagen: '/PerfumesClasicos/DolceGabbanaLightBlue.webp',
+    descripcion: `
+    "Dolce & Gabbana Light Blue" es una fragancia fresca, luminosa y afrutada que captura la esencia del verano mediterráneo.
+
+    - Notas de salida: Manzana, cedro, campanilla.
+    - Notas de corazón: Jazmín, rosa blanca, bambú.
+    - Notas de fondo: Sándalo, ámbar, almizcle.
+
+    Ideal para quienes buscan un perfume refrescante y energizante que evoca la frescura del mar y el sol.`
   }
 ];

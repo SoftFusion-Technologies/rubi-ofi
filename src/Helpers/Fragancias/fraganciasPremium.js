@@ -94,5 +94,37 @@ export const fraganciasPremium = [
       - Notas de fondo: Vainilla de Madagascar y almizcle.
 
       Un aroma audaz y femenino en presentación de 100 ml.`
+  },
+  {
+    id: 7,
+    nombre: 'YSL BLACK OPIUM',
+    precio: '$16.000,00',
+    newPrecio: 'Precio con efectivo o transferencia $14.500,00',
+    categoria: 'premium',
+    imagen: '/PerfumesDestacados/YSLBlackOpiumFront.webp',
+    descripcion: `
+    "YSL Black Opium" es una fragancia femenina audaz y moderna, que mezcla el café y las flores de una manera única.
+
+    - Notas de salida: Café, pera.
+    - Notas de corazón: Jazmín, almendra.
+    - Notas de fondo: Vainilla, pachulí, cedro.
+
+    Perfecta para una mujer con una personalidad atrevida y sofisticada, ideal para la noche.`
+  },
+  {
+    id: 8,
+    nombre: 'DOLCE & GABBANA THE ONE',
+    precio: '$18.000,00',
+    newPrecio: 'Precio con efectivo o transferencia $16.500,00',
+    categoria: 'premium',
+    imagen: '/PerfumesDestacados/DolceGabbanaTheOneFront.webp',
+    descripcion: `
+    "Dolce & Gabbana The One" es una fragancia oriental-floral que transmite elegancia y sensualidad.
+
+    - Notas de salida: Durazno, lichi, bergamota.
+    - Notas de corazón: Jazmín, lirio, ciruela.
+    - Notas de fondo: Madera de sándalo, almizcle, vainilla.
+
+    Ideal para una mujer sofisticada que busca un perfume distintivo y lleno de glamour.`
   }
 ];
