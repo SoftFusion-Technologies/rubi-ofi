@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import ModalProducto from '../../Components/GLOBAL/ModalProducto';
-import ImgLogoSoft from '../../Images/LOGOSOFT_v1.png';
+// import ImgLogoSoft from '../../Images/LOGOSOFT_v1.png';
+import ProdCapilar1 from '../../Images/ProductosCapilar/Prod_Capilar_1.jpg';
+import ProdCapilar2 from '../../Images/ProductosCapilar/Prod_Capilar_2.jpg';
+import ProdCapilar3 from '../../Images/ProductosCapilar/Prod_Capilar_3.jpg';
+import ProdCapilar4 from '../../Images/ProductosCapilar/Prod_Capilar_4.jpg';
+import ProdCapilar5 from '../../Images/ProductosCapilar/Prod_Capilar_5.jpg';
+import ProdCapilar6 from '../../Images/ProductosCapilar/Prod_Capilar_6.jpg';
 
 export default function Capilar() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -48,22 +54,27 @@ export default function Capilar() {
         {productosCapilar.map((producto, index) => (
           <div
             key={index}
-            className="relative bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+            className="relative bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl flex flex-col"
           >
-            <div className="relative">
+            {/* Imagen con tamaño fijo y centrado */}
+            <div className="w-full h-64 flex items-center justify-center bg-gray-100">
               <img
                 src={producto.imagen}
                 alt={producto.nombre}
-                className="w-full h-full object-contain rounded-t-xl"
+                className="max-h-full max-w-full object-contain"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 hover:opacity-100 transition duration-300"></div>
             </div>
 
-            <div className="p-6 text-black text-center">
-              <h3 className="text-2xl font-semibold text-gray-900">
+            {/* Contenido con altura mínima */}
+            <div className="p-6 text-black text-center flex flex-col flex-grow">
+              <h3 className="uppercase text-2xl font-semibold text-gold">
                 {producto.nombre}
               </h3>
-              <p className="text-gray-600 mt-2">{producto.descripcion}</p>
+              <p className="text-gray-600 mt-2 flex-grow">
+                {producto.descripcion}
+              </p>
+
+              {/* Botón fijo abajo */}
               <button
                 className="mt-4 bg-[#d4af37] text-white px-6 py-2 rounded-full font-semibold hover:bg-yellow-500 transition duration-300 shadow-lg hover:shadow-xl"
                 onClick={() => abrirModal(producto)}
@@ -74,6 +85,7 @@ export default function Capilar() {
           </div>
         ))}
       </div>
+
       {/* Modal */}
       <ModalProducto
         producto={productoSeleccionado}
@@ -88,32 +100,68 @@ export default function Capilar() {
 const productosCapilar = [
   {
     id: 1,
-    nombre: 'Shampoo Nutritivo',
-    descripcion: 'Limpieza profunda con hidratación intensa.',
-    imagen: ImgLogoSoft,  
-    precio: 850,
+    nombre: 'Retoque de raíz en spray',
+    descripcion:
+      'producto temporal que cubre las canas y las raíces oscuras del cabello.',
+    imagen: ProdCapilar1,
+    precio: 21100,
     categoria: 'Shampoo',
     disponibilidad: 'En stock',
-    material: 'Ingredientes naturales'
+    material: 'Ingredientes en la descripción del producto.'
   },
   {
     id: 2,
-    nombre: 'Acondicionador Reparador',
-    descripcion: 'Repara y fortalece el cabello dañado.',
-    imagen: ImgLogoSoft,
-    precio: 950,
+    nombre: 'Mascarilla de  nutrición',
+    descripcion:
+      'Una mascarilla de nutrición es un tratamiento capilar que hidrata, nutre y revitaliza el cabello.',
+    imagen: ProdCapilar2,
+    precio: 5100,
     categoria: 'Acondicionadores',
     disponibilidad: 'En stock',
-    material: 'Aceite de argán'
+    material: 'Ingredientes en la descripción del producto.'
   },
   {
     id: 3,
-    nombre: 'Mascarilla Capilar',
-    descripcion: 'Nutrición profunda para un cabello sedoso.',
-    imagen: ImgLogoSoft,
-    precio: 1200,
-    categoria: 'Mascarillas',
-    disponibilidad: 'Agotado',
-    material: 'Aceite de coco'
+    nombre: 'Mascara  reparadora profesional',
+    descripcion:
+      'Hidrata y repara la fibra capilar brindando una textura suave y sedosa.',
+    imagen: ProdCapilar3,
+    precio: 32000,
+    categoria: 'Capilar',
+    disponibilidad: 'En Stock',
+    material: 'Ingredientes en la descripción del producto.'
+  },
+  {
+    id: 4,
+    nombre: 'Aceite reparador para puntas',
+    descripcion:
+      'El aceite reparador de puntas es un producto capilar que nutre y repara las puntas dañadas o abiertas.',
+    imagen: ProdCapilar4,
+    precio: 9400,
+    categoria: 'Capilar',
+    disponibilidad: 'En Stock',
+    material: 'Ingredientes en la descripción del producto.'
+  },
+  {
+    id: 5,
+    nombre: 'Máscara capilar brasileras de 1kg',
+    descripcion:
+      'Es una máscara apta Co wash ligera, de nutrición y limpieza suave con aroma a Banana (suave).',
+    imagen: ProdCapilar5,
+    precio: 4500,
+    categoria: 'Capilar',
+    disponibilidad: 'En Stock',
+    material: 'Ingredientes en la descripción del producto.'
+  },
+  {
+    id: 6,
+    nombre: 'Shampo y acondicionador',
+    descripcion:
+      'El champú limpia el cabello y el cuero cabelludo, mientras que el acondicionador lo protege y embellece.',
+    imagen: ProdCapilar6,
+    precio: 8000,
+    categoria: 'Capilar',
+    disponibilidad: 'En Stock',
+    material: 'Ingredientes en la descripción del producto.'
   }
 ];
