@@ -21,8 +21,8 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-pink-100 via-pink-200 to-pink-300 py-12 px-4 sm:px-8 lg:px-16">
-      <h2 className="text-center text-3xl sm:text-4xl font-extrabold text-pink-700 mb-8">
+    <div className="bg-gradient-to-r from-[#D4AF37] via-[#FFD700] to-[#CFAE68] py-12 px-4 sm:px-8 lg:px-16">
+      <h2 className="font-bignoodle text-center text-3xl sm:text-4xl font-extrabold text-black mb-8">
         Lo que dicen nuestros clientes
       </h2>
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

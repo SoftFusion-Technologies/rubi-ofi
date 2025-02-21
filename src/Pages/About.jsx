@@ -11,10 +11,10 @@ const About = () => {
 
   return (
     <div className="about-container">
-      <h1 className="pt-4 text-3xl text-center font-bold sm:text-5xl font-bignoodle">
+      <h1 className="text-center text-[#d4af37] text-4xl sm:text-6xl font-bold mb-6 font-bignoodle tracking-wide drop-shadow-md">
         QUIÉNES SOMOS
       </h1>
-      <section className="about-content">
+      <section className="about-content ">
         <h2 className="font-bignoodle">Sobre Rubí</h2>
         <p>
           Bienvenidos a <strong>Rubí</strong>, una perfumería ubicada en

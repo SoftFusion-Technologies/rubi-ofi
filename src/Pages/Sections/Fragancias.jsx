@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import '../Styles/Productos.css';
+import '../../Styles/Productos.css';
 import { Link } from 'react-router-dom'; // Importar Link
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import ProductNotFound from '../Components/ProductNotFound';
-import { fraganciasPremium } from '../Helpers/Fragancias/fraganciasPremium';
-import { fraganciasClasicas } from '../Helpers/Fragancias/fraganciasClasicas';
+import ProductNotFound from '../../Components/ProductNotFound';
+import { fraganciasPremium } from '../../Helpers/Fragancias/fraganciasPremium';
+import { fraganciasClasicas } from '../../Helpers/Fragancias/fraganciasClasicas';
 const Fragancias = () => {
   // Desplazar hacia la parte superior cuando el componente se monte
   useEffect(() => {
@@ -38,9 +38,9 @@ const Fragancias = () => {
 
   return (
     <div className="productos-container py-16 px-4 sm:px-8">
-      <h1 className="text-3xl font-bold text-center sm:text-5xl mb-8 font-bignoodle">
+        <h2 className="text-center text-[#d4af37] text-4xl sm:text-6xl font-bold mb-6 font-bignoodle tracking-wide drop-shadow-md">
         Nuestros Productos
-      </h1>
+      </h2>
       {/* Campo de búsqueda */}
       <div className="relative mb-8">
         {/* Input con lupa */}
