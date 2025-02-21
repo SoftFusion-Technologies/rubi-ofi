@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import '../Styles/Footer.css';
+import '../../Styles/Footer.css';
 import { FaFacebook, FaInstagram, FaTwitter, FaArrowUp } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 

@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import CartProvider from './Components/CartContext'; // Importamos el proveedor del carrito
 import Home from './Pages/Home';
-import Footer from './Components/Footer';
-import Mapa from './Components/Mapa';
+import Footer from './Components/Footer/Footer';
+import Mapa from './Components/Footer/Mapa';
 import ProductDetail from './Pages/ProductDetail';
 import NotFound from './Pages/NotFound'; // Importar la página 404
 import Cart from './Components/Cart'; // Importamos el proveedor del carrito

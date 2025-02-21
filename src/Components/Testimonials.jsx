@@ -9,7 +9,7 @@ const Testimonials = () => {
         '¡Rubí tiene las mejores fragancias! Siempre encuentro lo que busco.'
     },
     {
-      name: 'Juan Pérez',
+      name: 'Ricardo Diaz',
       feedback:
         'Excelente atención al cliente y productos de gran calidad. ¡Muy recomendable!'
     },
