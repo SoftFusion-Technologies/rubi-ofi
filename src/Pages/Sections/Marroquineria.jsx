@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import ModalProducto from '../../Components/GLOBAL/ModalProducto';
-import ImgLogoSoft from '../../Images/LOGOSOFT_v1.png';
+// import ImgLogoSoft from '../../Images/LOGOSOFT_v1.png';
+import ProdMarroquineria1 from '../../Images/ProductosMarroquineria/Prod_Marroquineria_1.jpg';
+import ProdMarroquineria2 from '../../Images/ProductosMarroquineria/Prod_Marroquineria_2.jpg';
+import ProdMarroquineria3 from '../../Images/ProductosMarroquineria/Prod_Marroquineria_3.jpg';
+import ProdMarroquineria4 from '../../Images/ProductosMarroquineria/Prod_Marroquineria_4.jpg';
+import ProdMarroquineria5 from '../../Images/ProductosMarroquineria/Prod_Marroquineria_5.jpg';
+import ProdMarroquineria6 from '../../Images/ProductosMarroquineria/Prod_Marroquineria_6.jpg';
 
 export default function Marroquineria() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -75,32 +81,66 @@ export default function Marroquineria() {
 const productos = [
   {
     id: 1,
-    nombre: 'Cartera de Cuero Premium',
+    nombre: 'BOLSO AGARRATE CATALINA',
     descripcion: 'Elegancia y calidad en cada detalle.',
-    imagen: ImgLogoSoft,
-    precio: 25000,
-    categoria: 'Carteras',
+    imagen: ProdMarroquineria1,
+    precio: 35000,
+    categoria: 'Bolsos',
     disponibilidad: 'En stock',
-    material: 'Cuero genuino'
+    material:
+      'Las carteras Agarrate Catalina están hechas de diferentes materiales, como cuero ecológico, charol, poliéster, microfibra y simil cuero.'
   },
   {
     id: 2,
-    nombre: 'Mochila de Cuero Exclusiva',
+    nombre: 'BOLSO LAS OREIRO',
     descripcion: 'Diseño moderno y sofisticado.',
-    imagen: ImgLogoSoft,
-    precio: 32000,
-    categoria: 'Mochilas',
+    imagen: ProdMarroquineria2,
+    precio: 45000,
+    categoria: 'Bolsos',
     disponibilidad: 'En stock',
-    material: 'Cuero ecológico'
+    material:
+      'Los bolsos de Las Oreiro pueden estar hechos de diferentes materiales, como poliéster, nailon, cuero sintético, cuero vacuno y eco cuero.'
   },
   {
     id: 3,
-    nombre: 'Billetera de Lujo',
+    nombre: 'CARTERA AMAYRA',
     descripcion: 'Estilo y distinción en cada uso.',
-    imagen: ImgLogoSoft,
-    precio: 12000,
-    categoria: 'Billeteras',
-    disponibilidad: 'Agotado',
-    material: 'Cuero italiano'
+    imagen: ProdMarroquineria3,
+    precio: 35190,
+    categoria: 'Carteras',
+    disponibilidad: 'En stoc',
+    material:
+      ' La cartera Amayra puede estar hecha de diferentes materiales, como poliéster, cuero sintético, nylon o símil cuero.'
+  },
+  {
+    id: 4,
+    nombre: 'BILLETERA LIMA',
+    descripcion: 'Elegancia y comodidad.',
+    imagen: ProdMarroquineria4,
+    precio: 15000,
+    categoria: 'BILLETERA',
+    disponibilidad: 'En stock',
+    material: 'Las billeteras LIMA estan hechas de Cuero Sintetico Monedero.'
+  },
+  {
+    id: 5,
+    nombre: 'BILLETERA LAS OREIRO',
+    descripcion: 'Elegancia y calidad en cada detalle.',
+    imagen: ProdMarroquineria5,
+    precio: 20000,
+    categoria: 'Carteras',
+    disponibilidad: 'En stock',
+    material:
+      'Las billeteras LAS OREIRO están hechas de diferentes materiales,  Cuero Ecológico.'
+  },
+  {
+    id: 6,
+    nombre: 'BILLETERA LIMA',
+    descripcion: 'Elegancia y comodidad.',
+    imagen: ProdMarroquineria6,
+    precio: 15000,
+    categoria: 'BILLETERA',
+    disponibilidad: 'En stock',
+    material: 'Las billeteras LIMA estan hechas de Cuero Sintetico Monedero.'
   }
 ];
