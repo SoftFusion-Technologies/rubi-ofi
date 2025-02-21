@@ -124,14 +124,14 @@ const productos = [
   },
   {
     id: 5,
-    nombre: 'BILLETERA LAS OREIRO',
+    nombre: 'CARTUCHERAS LAS OREIRO',
     descripcion: 'Elegancia y calidad en cada detalle.',
     imagen: ProdMarroquineria5,
     precio: 20000,
-    categoria: 'Carteras',
+    categoria: 'Cartucheras',
     disponibilidad: 'En stock',
     material:
-      'Las billeteras LAS OREIRO están hechas de diferentes materiales,  Cuero Ecológico.'
+      'Las Cartucheras LAS OREIRO están hechas de diferentes materiales,  Cuero Ecológico.'
   },
   {
     id: 6,
