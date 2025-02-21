@@ -36,7 +36,7 @@ const FeaturedProducts = () => {
               {/* {product.id === 5 && <SinStock />} */}
             </div>
             <div className="p-4">
-              <h3 className="text-xl font-semibold font-bignoodle text-center">
+              <h3 className="text-gold text-xl font-semibold font-bignoodle text-center">
                 {product.title}
               </h3>
               <p className="text-lg text-gray-600 mt-2 text-center">

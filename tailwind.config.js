@@ -6,7 +6,8 @@ export default {
       colors: {
         primary: '#1a202c',
         secondary: '#f7fafc',
-        accent: '#ed64a6'
+        accent: '#ed64a6',
+        gold: '#d4af37' // Dorado elegante
       }
     }
   },

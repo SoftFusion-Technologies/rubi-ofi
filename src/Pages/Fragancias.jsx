@@ -79,7 +79,7 @@ const Fragancias = () => {
               className="w-full h-64 object-cover"
             />
             <div className="p-4 text-center">
-              <h3 className="text-xl font-semibold text-black">
+              <h3 className="text-xl font-semibold text-gold">
                 {producto.nombre}
               </h3>
               <p className="text-lg text-gray-600">{producto.precio}</p>
@@ -120,7 +120,7 @@ const Fragancias = () => {
               className="w-full h-64 object-cover"
             />
             <div className="p-4 text-center">
-              <h3 className="text-xl font-semibold text-black">
+              <h3 className="text-xl font-semibold text-gold">
                 {producto.title}
               </h3>
               <p className="text-lg text-gray-600">{producto.precio}</p>

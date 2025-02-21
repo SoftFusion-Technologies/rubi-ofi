@@ -5,23 +5,24 @@ import '../Styles/InfoSection.css';
 const InfoSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const items = [
-    {
-      icon: <FaShippingFast className="icon" />,
-      title: 'Envíos',
-      description: 'A todo el país.'
-    },
-    {
-      icon: <FaCreditCard className="icon" />,
-      title: 'Pagos',
-      description: 'Aceptamos tarjetas, transferencia o en efectivo.'
-    },
-    {
-      icon: <FaWhatsapp className="icon" />,
-      title: 'Consultas',
-      description: 'Si tienes alguna duda, contáctanos al WhatsApp.'
-    }
-  ];
+const items = [
+  {
+    icon: <FaShippingFast className="text-gold text-5xl" />,
+    title: 'Envíos',
+    description: 'A todo el país.'
+  },
+  {
+    icon: <FaCreditCard className="text-gold text-5xl" />,
+    title: 'Pagos',
+    description: 'Aceptamos tarjetas, transferencia o en efectivo.'
+  },
+  {
+    icon: <FaWhatsapp className="text-gold text-5xl" />,
+    title: 'Consultas',
+    description: 'Si tienes alguna duda, contáctanos al WhatsApp.'
+  }
+];
+
 
   // Cambiar el índice cada 4 segundos
   useEffect(() => {
