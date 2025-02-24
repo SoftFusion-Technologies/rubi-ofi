@@ -75,15 +75,16 @@ const Regalos = () => {
             } bg-white p-6 rounded-lg shadow-lg hover:shadow-xl cursor-pointer transition duration-300`}
             onClick={() => openWhatsApp(producto.nombre)} // Redirige a WhatsApp al hacer clic
           >
-            <div className="w-full mb-4">
+            <div className="w-full flex justify-center items-center">
               <img
                 src={producto.imagen}
                 alt={producto.nombre}
-                className="w-full h-auto object-contain rounded-md"
+                className="max-h-[500px] w-auto object-cover rounded-md"
               />
             </div>
+
             <h3 className="text-xl font-medium text-gray-800 text-center">
-              {producto.nombre}
+              {/* {producto.nombre} */}
             </h3>
           </div>
         ))}
