@@ -1,5 +1,11 @@
 import React, { useEffect } from 'react';
 import ImgLogo from '../../Images/LOGOSOFT_v1.png';
+import ImgRegalo1 from '../../Images/Regalos/ImgRegalo1.jpeg';
+import ImgRegalo2 from '../../Images/Regalos/ImgRegalo2.jpeg';
+import ImgRegalo3 from '../../Images/Regalos/ImgRegalo3.jpeg';
+import ImgRegalo4 from '../../Images/Regalos/ImgRegalo4.jpeg';
+import ImgRegalo5 from '../../Images/Regalos/ImgRegalo5.jpeg';
+
 const Regalos = () => {
   // Desplazar hacia la parte superior cuando el componente se monte
   useEffect(() => {
@@ -13,27 +19,27 @@ const Regalos = () => {
     {
       id: 1,
       nombre: 'Perfume Floral Elegante',
-      imagen: ImgLogo
+      imagen: ImgRegalo1
     },
     {
       id: 2,
       nombre: 'Set de Cuidado Corporal',
-      imagen: ImgLogo
+      imagen: ImgRegalo2
     },
     {
       id: 3,
       nombre: 'Vela Aromática de Lavanda',
-      imagen: ImgLogo
+      imagen: ImgRegalo3
     },
     {
       id: 4,
       nombre: 'Aceite Esencial de Rosas',
-      imagen: ImgLogo
+      imagen: ImgRegalo4
     },
     {
       id: 5,
       nombre: 'Set de Baño Relajante',
-      imagen: ImgLogo
+      imagen: ImgRegalo5
     }
   ];
 
